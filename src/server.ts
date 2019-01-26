@@ -5,7 +5,7 @@ const app = new App(
     [
         new RiskController(),
     ],
-    5000,
+    80,
 );
 
 app.listen();

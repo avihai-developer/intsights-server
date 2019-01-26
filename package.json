@@ -4,7 +4,10 @@
   "description": "",
   "main": "src/app.ts",
   "scripts": {
-    "watch": "nodemon --watch"
+    "watch": "nodemon --watch",
+    "serve": "node dist/server.js",
+    "build": "tsc",
+    "start": "npm run serve"
   },
   "keywords": [],
   "author": "",
