@@ -9,6 +9,7 @@ export default class DashboardController {
 
     public path = '/dashboard';
     public router = express.Router();
+    private numberOfRisksInTheRiskMeter = 300;
 
     constructor() {
         this.riskController = new RiskController();
@@ -253,7 +254,7 @@ export default class DashboardController {
         if (risks && risks.length) {
             for (let i = 0; i < risks.length; i++) {
                 const risk = risks[i];
-                if (i < 300) {
+                if (i < this.numberOfRisksInTheRiskMeter) {
                     totalSeverityRisk = totalSeverityRisk + this.getSeverityRisk(risk);
                     totalTypeRisk = totalTypeRisk + this.getTypeRisk(risk);
                 }
