@@ -8,4 +8,5 @@ export default interface WebStatisticsCard {
     type: WebStatisticsCardType;
     items: DonutContentDictionary | IconsContentDictionary | MetersContentDictionary;
     total?: number;
+    order: number;
 }

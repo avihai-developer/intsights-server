@@ -46,34 +46,41 @@ export default class DashboardController {
                                 AttackIndication: {
                                     text: 'ATTACK INDICATION',
                                     value: 0,
-                                    imageUrl: './assets/attack.svg'
+                                    imageUrl: './assets/attack.svg',
+                                    order: 0
                                 },
                                 DataLeakage: {
                                     text: 'DATA LEAKAGE',
                                     value: 0,
-                                    imageUrl: './assets/data_leak.svg'
+                                    imageUrl: './assets/data_leak.svg',
+                                    order: 1
                                 },
                                 Phishing: {
                                     text: 'PHISHING',
                                     value: 0,
-                                    imageUrl: './assets/phishing.svg'
+                                    imageUrl: './assets/phishing.svg',
+                                    order: 2
                                 },
                                 BrandSecurity: {
                                     text: 'BRAND SECURITY',
                                     value: 0,
-                                    imageUrl: './assets/brand_security.svg'
+                                    imageUrl: './assets/brand_security.svg',
+                                    order: 3
                                 },
                                 ExploitableData: {
                                     text: 'EXPLOITABLE DATA',
                                     value: 0,
-                                    imageUrl: './assets/exploitable_data.svg'
+                                    imageUrl: './assets/exploitable_data.svg',
+                                    order: 4
                                 },
                                 vip: {
                                     text: 'VIP',
                                     value: 0,
-                                    imageUrl: './assets/vip.svg'
+                                    imageUrl: './assets/vip.svg',
+                                    order: 5
                                 }
-                            }
+                            },
+                            order: 0
                         },
                         severity: {
                             title: 'SEVERITIES',
@@ -82,19 +89,23 @@ export default class DashboardController {
                                 High: {
                                     text: 'HIGH',
                                     value: 0,
-                                    color: '#e52e3d'
+                                    color: '#e52e3d',
+                                    order: 0
                                 },
                                 Medium: {
                                     text: 'MEDIUM',
                                     value: 0,
-                                    color: '#f7a800'
+                                    color: '#f7a800',
+                                    order: 1
                                 },
                                 Low: {
                                     text: 'LOW',
                                     value: 0,
-                                    color: '#03afd8'
+                                    color: '#03afd8',
+                                    order: 2
                                 },
-                            }
+                            },
+                            order: 1
                         },
                         sourceType: {
                             title: 'SOURCES (%)',
@@ -102,24 +113,30 @@ export default class DashboardController {
                             items: {
                                 ApplicationStores: {
                                     text: 'APPLICATION STORES',
-                                    value: 0
+                                    value: 0,
+                                    order: 0
                                 },
                                 SocialMedia: {
                                     text: 'SOCIAL MEDIA',
-                                    value: 0
+                                    value: 0,
+                                    order: 1
                                 },
                                 PasteSites: {
                                     text: 'PASTE SITES',
-                                    value: 0
+                                    value: 0,
+                                    order: 2
                                 },
                                 Others: {
                                     text: 'OTHERS',
-                                    value: 0
+                                    value: 0,
+                                    order: 3
                                 }
                             },
-                            total: 0
+                            total: 0,
+                            order: 2
                         }
-                    }
+                    },
+                    order: 0
                 },
                 DarkWeb: {
                     mainCard: {
@@ -134,34 +151,41 @@ export default class DashboardController {
                                 AttackIndication: {
                                     text: 'ATTACK INDICATION',
                                     value: 0,
-                                    imageUrl: './assets/attack.svg'
+                                    imageUrl: './assets/attack.svg',
+                                    order: 0
                                 },
                                 DataLeakage: {
                                     text: 'DATA LEAKAGE',
                                     value: 0,
-                                    imageUrl: './assets/data_leak.svg'
+                                    imageUrl: './assets/data_leak.svg',
+                                    order: 1
                                 },
                                 Phishing: {
                                     text: 'PHISHING',
                                     value: 0,
-                                    imageUrl: './assets/phishing.svg'
+                                    imageUrl: './assets/phishing.svg',
+                                    order: 2
                                 },
                                 BrandSecurity: {
                                     text: 'BRAND SECURITY',
                                     value: 0,
-                                    imageUrl: './assets/brand_security.svg'
+                                    imageUrl: './assets/brand_security.svg',
+                                    order: 3
                                 },
                                 ExploitableData: {
                                     text: 'EXPLOITABLE DATA',
                                     value: 0,
-                                    imageUrl: './assets/exploitable_data.svg'
+                                    imageUrl: './assets/exploitable_data.svg',
+                                    order: 4
                                 },
                                 vip: {
                                     text: 'VIP',
                                     value: 0,
-                                    imageUrl: './assets/vip.svg'
+                                    imageUrl: './assets/vip.svg',
+                                    order: 5
                                 }
-                            }
+                            },
+                            order: 0
                         },
                         severity: {
                             title: 'SEVERITIES',
@@ -170,19 +194,23 @@ export default class DashboardController {
                                 High: {
                                     text: 'HIGH',
                                     value: 0,
-                                    color: '#e52e3d'
+                                    color: '#e52e3d',
+                                    order: 0
                                 },
                                 Medium: {
                                     text: 'MEDIUM',
                                     value: 0,
-                                    color: '#f7a800'
+                                    color: '#f7a800',
+                                    order: 1
                                 },
                                 Low: {
                                     text: 'LOW',
                                     value: 0,
-                                    color: '#03afd8'
+                                    color: '#03afd8',
+                                    order: 2
                                 },
-                            }
+                            },
+                            order: 1
                         },
                         sourceType: {
                             title: 'SOURCES (%)',
@@ -190,24 +218,30 @@ export default class DashboardController {
                             items: {
                                 BlackMarkets: {
                                     text: 'BLACK MARKETS',
-                                    value: 0
+                                    value: 0,
+                                    order: 0
                                 },
                                 HackingForums: {
                                     text: 'HACKING FORUMS',
-                                    value: 0
+                                    value: 0,
+                                    order: 1
                                 },
                                 PasteSites: {
                                     text: 'PASTE SITES',
-                                    value: 0
+                                    value: 0,
+                                    order: 2
                                 },
                                 Others: {
                                     text: 'OTHERS',
-                                    value: 0
+                                    value: 0,
+                                    order: 3
                                 }
                             },
-                            total: 0
+                            total: 0,
+                            order: 2
                         }
-                    }
+                    },
+                    order: 1
                 }
             }
         };

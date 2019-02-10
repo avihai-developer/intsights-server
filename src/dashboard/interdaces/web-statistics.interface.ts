@@ -6,4 +6,5 @@ export default interface WebStatistics {
         imageUrl: string;
     };
     cards: WebStatisticsCardDictionary;
+    order: number;
 }
