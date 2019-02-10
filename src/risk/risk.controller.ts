@@ -2,7 +2,7 @@ import * as express from 'express';
 import Risk from "./risk.interface";
 import data from "./data";
 
-class RiskController {
+export default class RiskController {
     public path = '/risk';
     public router = express.Router();
 
@@ -30,15 +30,17 @@ class RiskController {
         this.risks.sort(function(a,b){return b.date.getTime() - a.date.getTime()});
     }
 
+    getRisks(): Risk[] {
+        return this.risks;
+    }
+
     getList = (request: express.Request, response: express.Response) => {
         const amount = +request.query.amount;
         if (!amount) {
             response.statusCode = 400;
             return response.send('Invalid amount');
         } else {
-            response.send(this.risks.slice(0, amount));
+            return response.send(this.risks.slice(0, amount));
         }
     }
 }
-
-export default RiskController;
